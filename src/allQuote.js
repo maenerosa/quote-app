@@ -1,4 +1,4 @@
-const title = document.getElementById("title");
+const title = document.getElementById("container");
 const author = document.getElementById("author");
 
 export default function getQuote(quoteData) {
