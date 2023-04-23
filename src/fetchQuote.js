@@ -4,5 +4,5 @@ export default async function fetchQuote(content) {
   const response = await fetch(RANDOM_QUOTE);
   const fetchQuote = await response.json();
 
-  return weatherData;
+  return fetchQuote;
 }
