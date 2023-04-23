@@ -14,10 +14,10 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.container {
+.quote-container {
   font-family: "Jim Nightshade", script;
-  font-size: 13vmin;
-  line-height: 1.2;
+  font-size: 20px;
+  line-height: 2rem;
   hanging-punctuation: first;
 }
 
