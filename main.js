@@ -1,17 +1,15 @@
 import "./style.css";
 
-const title = document.getElementById("container");
+const title = document.getElementById("quote-container");
 const quote = document.getElementById("quote-text");
 const author = document.getElementById("author");
 const btnGenerate = document.getElementById("btn-generate");
 
-function randomQuote() {
-  fetch(`https://api.quotable.io/quotes/random`)
-    .then((response) => response.json())
-    .then((data) => {
-      title.textContent = data.content;
-      author.textContent = `-- $(data.author}`;
-    });
+async function randomQuote() {
+  const response = await fetch("https://api.quotable.io/quotes/random");
+  const data = await response.json();
+
+  return data;
 }
 
-randomQuote();
+randomQuote().then((data) => console.log(data));
