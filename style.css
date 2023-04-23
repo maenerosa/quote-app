@@ -19,7 +19,6 @@ body {
   font-family: "Jim Nightshade", script;
   font-size: 20px;
   line-height: 2rem;
-  hanging-punctuation: first;
   background-color: pink;
   border-radius: 20px;
   padding: 4rem 1.5rem;
@@ -35,4 +34,15 @@ button {
   font-size: 0.8rem;
   background: none;
   border: 1px solid rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 30px;
+  margin-bottom: 2rem;
+}
+
+blockquote {
+  padding: 1rem 0;
+  font-weight: 300;
 }
