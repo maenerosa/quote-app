@@ -35,22 +35,22 @@ span {
 .wrapper .content {
   margin: 35px 0;
 }
-.content .quote-area {
+.content .quote-container {
   display: flex;
   justify-content: center;
 }
-.quote-area i {
+.quote-container i {
   font-size: 15px;
 }
-.quote-area i:first-child {
+.quote-container i:first-child {
   margin: 3px 10px 0 0;
 }
-.quote-area i:last-child {
+.quote-container i:last-child {
   display: flex;
   margin: 0 0 3px 10px;
   align-items: flex-end;
 }
-.quote-area .quote {
+.quote-container .quote {
   font-size: 22px;
   text-align: center;
   word-break: break-all;
