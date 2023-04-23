@@ -2,9 +2,7 @@ import "./style.css";
 
 const quoteText = document.querySelector(".quote"),
   quoteBtn = document.querySelector("button"),
-  authorName = document.querySelector(".name"),
-  copyBtn = document.querySelector(".copy"),
-  twitterBtn = document.querySelector(".twitter");
+  authorName = document.querySelector(".name");
 
 function randomQuote() {
   quoteBtn.classList.add("loading");
@@ -19,11 +17,4 @@ function randomQuote() {
     });
 }
 
-copyBtn.addEventListener("click", () => {
-  navigator.clipboard.writeText(quoteText.innerText);
-});
-twitterBtn.addEventListener("click", () => {
-  let tweetUrl = `https://twitter.com/intent/tweet?url=${quoteText.innerText}`;
-  window.open(tweetUrl, "_blank");
-});
 quoteBtn.addEventListener("click", randomQuote);
