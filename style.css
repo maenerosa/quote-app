@@ -15,7 +15,7 @@ body {
   flex-direction: column;
   background-color: whitesmoke;
 }
-.quote-container {
+#quote-container {
   font-family: "Jim Nightshade", script;
   font-size: 20px;
   line-height: 2rem;
@@ -42,7 +42,7 @@ h2 {
   margin-bottom: 2rem;
 }
 
-blockquote {
+#quote-text {
   padding: 1rem 0;
   font-weight: 300;
 }
