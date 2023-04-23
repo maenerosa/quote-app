@@ -1,7 +1,7 @@
 import "./style.css";
 
 const quoteContainer = document.querySelector(".quote"),
-  quoteBtn = document.querySelector("button"),
+  quoteBtn = document.querySelector("#btn-generator"),
   authorName = document.querySelector(".name");
 
 function randomQuote() {
