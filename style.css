@@ -95,9 +95,7 @@ ul li:is(:hover, .active) {
   color: #fff;
   background: #5372f0;
 }
-ul .speech.active {
-  pointer-events: none;
-}
+
 .buttons button {
   border: none;
   color: #fff;
