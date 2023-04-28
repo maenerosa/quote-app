@@ -1,13 +1,13 @@
 import "./style.css";
 
-const quoteText = document.querySelector("quote"),
+const quoteText = document.querySelector(".quote"),
   quoteBtn = document.querySelector("btn-generator"),
-  authorName = document.querySelector("name");
+  authorName = document.querySelector(".name");
 
 function randomQuote() {
   quoteBtn.classList.add("loading");
   quoteBtn.innerText = "Loading Quote...";
-  fetch("http://api.quotable.io/")
+  fetch("http://api.quotable.io/random")
     .then((response) => response.json())
     .then((result) => {
       quoteText.innerText = result.content;
